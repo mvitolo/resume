@@ -1,697 +1,1163 @@
 <!doctype html>
 <html>
-
-<head>
+  <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title>Matteo Vitolo</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <style>/* Utils */
-/*----- Colors -----*/
-/*----- Fonts -----*/
-/*----- Dimensions and sizes -----*/
-/* Base */
-@font-face {
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Josefin Sans Light'), local('JosefinSans-Light'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ecpl5te10k.ttf) format('truetype');
-}
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <style>
+  /********************************************
+* 	reset from
+* 	http://meyerweb.com/eric/tools/css/reset/
+*******************************************/
 
-@font-face {
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ectllte10k.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 300;
-  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI9w2_Gwfo.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
-}
-
-html {
-  background: white;
-}
-
-body {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  background: white;
-  margin: 50px 0 100px;
-  letter-spacing: .3px;
-  color: #39424B;
-}
-
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-  text-transform: none;
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
-h1 {
-  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  letter-spacing: 1px;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
-h2 {
-  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  letter-spacing: .5px;
+body {
+  line-height: 1;
 }
 
-h3 {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  letter-spacing: .4px;
+ol,
+ul {
+  list-style: none;
 }
 
-h3.bold {
-  font-weight: 700;
+blockquote,
+q {
+  quotes: none;
 }
 
-h4 {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 12px;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
 }
 
-h4.bold {
-  font-weight: 700;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-h5 {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 11px;
-}
+/****************
+*	COMMONS
+****************/
 
-h5.italic {
-  font-style: italic;
-}
-
-h6 {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+body,
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 13px;
+  color: #40484f;
   font-weight: 400;
-  font-size: 10px;
+  letter-spacing: 0;
+  line-height: 1.46153846;
+  text-align: left;
+}
+
+p {
+  display: block;
 }
 
 a {
-  color: inherit;
-  text-decoration: inherit;
+  color: #0095ff;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #2895F1;
+  color: #0c65a5;
+  text-decoration: underline;
 }
 
-a .fa-external-link {
-  font-size: 10px;
-  vertical-align: text-top;
-}
-
-p,
 li {
-  font-size: 11px;
+  list-style-type: square;
+  list-style-position: outside;
+  margin-left: 1.3em;
 }
 
-blockquote {
-  font-size: 11px;
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-style: italic;
-  margin: 10px 25px;
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.67rem;
+}
+
+h3 {
+  font-size: 1.27rem;
 }
 
 em {
-  color: #999;
+  color: #757575;
 }
 
-ul {
-  margin: 10px 0 0;
-  -webkit-padding-start: 25px;
+blockquote {
+  margin-bottom: 1em;
 }
 
-ul li {
-  padding-left: 10px;
+strong {
+  font-weight: 700;
 }
 
-ul.minimal {
-  list-style: none;
+/* main container */
+
+#resume {
+  padding: 1.5rem;
+}
+
+/* every section wrapper */
+
+.section {
+  margin-bottom: 1rem;
+}
+
+section .location {
+  margin-right: 0.5em;
+  color: #606d76;
+  font-weight: 700;
+}
+
+#contact {
+  margin-top: 0.5rem;
+}
+
+#profiles .item {
   padding: 0;
 }
 
-ul.minimal li {
-  margin-bottom: 3px;
-  padding-left: 0;
+#header > #profiles,
+#header > #contact,
+#skills,
+#languages,
+#interests {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
-ul.two-column {
-  -webkit-column-count: 2;
-  -webkit-column-gap: 28px;
-  column-count: 2;
-  column-gap: 28px;
+#header > div {
+  line-height: 1.5;
 }
 
-ul.two-column li {
-  padding-left: 0;
+#header > div > div {
+  margin-right: 1.2em;
 }
 
-@page {
-  size: A4;
+#header h1.name {
+  font-size: 2.8rem;
+  font-weight: 100;
+  line-height: 100%;
 }
 
-.container {
-  padding-top: 20px;
+#header h2.label {
+  color: #202931;
+  font-size: 1.47rem;
+  font-weight: 300;
 }
 
-.keyline {
-  width: 45px;
-  margin: 8px 0 10px;
-  border-top: 1px solid #56817A;
-}
-
-.pull-left {
-  float: left;
-}
-
-.pull-right {
+#header .image {
+  width: 11em;
   float: right;
+  border-radius: 4px;
 }
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+.main-summary {
+  background: #f1f8ff;
+  padding: 1.2em 1em;
+  margin-top: 1rem;
 }
 
-.profile-pic {
-  margin-top: -5px;
-  margin-right: 18px;
+.main-summary p {
+  margin: 0;
 }
 
-.profile-pic img {
-  height: 52px;
-  width: 52px;
-  border-radius: 50%;
-  border: 2px solid #56817A;
-}
-
-.summary {
-  margin: 5px 0 5px;
-}
-
-.sublink {
-  font-size: 70%;
-  font-weight: 200;
-  color: dimgray;
-}
-
-.capitalize {
-  text-transform: capitalize;
-}
-
-/* Layouts */
-.page {
-  background: white;
-  width: 612px;
-  min-height: 792px;
-  display: block;
-  margin: 0 auto;
-  border-top: 10px solid #56817A;
-  padding: 36px 22px 30px 34px;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
-}
-
-.page:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.left-column {
-  float: left;
-  width: 160px;
-  margin-right: 20px;
-  word-wrap: break-word;
-}
-
-.right-column {
-  width: auto;
-  overflow: hidden;
-}
-
-.item {
-  margin-bottom: 15px;
-}
-
-.item:last-child {
-  margin-bottom: 0;
-}
-
-@media print {
-  body {
-    margin: 0;
-  }
-
-  .page {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 36px 0 30px;
-    box-shadow: none;
-  }
-
-  .page .resume-header,
-  .page .resume-content {
-    padding: 0 22px 0 34px;
-  }
-
-  .container {
-    page-break-inside: avoid;
-  }
-
-  .work-container .item {
-    page-break-inside: avoid;
-  }
-
-  .fa-external-link {
-    display: none;
-  }
-}
-
-/* Components */
-.info-tag-container {
-  margin-bottom: 5px;
-}
-
-.info-tag-container .fa {
-  font-size: 14px;
-  width: 12px;
-  margin-right: 5px;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.info-tag-container .fa.fa-map-marker {
-  font-size: 16px;
-}
-
-.info-tag-container .fa.fa-mobile {
-  font-size: 18px;
-}
-
-.info-tag-container .fa.fa-envelope-o {
-  font-size: 12px;
-}
-
-.info-tag-container .fa.fa-desktop {
-  font-size: 11px;
-}
-
-.info-tag-container .fa.fa-external-link {
-  width: auto;
-  font-size: inherit;
-  vertical-align: text-top;
-}
-
-.info-tag-container .info-text {
-  font-size: 12px;
-  text-transform: none;
+.section-title {
   display: inline-block;
-  vertical-align: middle;
-  width: 139px;
+  background: #fff;
+  padding: 0 1em 0.3em 0;
+  color: #ff6d1f;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  font-size: 0.9rem;
 }
 
-.references-container .fa {
-  font-size: 14px;
+.section > header {
+  position: relative;
 }
 
-.education-container .location {
-  padding-bottom: 6px;
+.fa {
+  margin-right: 0.25em;
+}
+
+.section > header::after {
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  height: 1px;
+  background: #ccc;
+  content: "";
+  width: 100%;
+  z-index: -100;
+  display: block;
+}
+
+.section.main-summary > section {
+  margin: 0;
+}
+
+.section > section > header {
+  font-size: 1.38rem;
+  position: relative;
+  margin-top: 0.7em;
+}
+
+.section > section > header:first-of-type {
+  margin: 0;
+}
+
+.section > section > header .space-left {
+  position: absolute;
+  left: -1.56rem;
+  top: 5px;
+  color: #aaa;
+  line-height: 1;
+  opacity: 0;
+}
+
+.position,
+.company,
+.organization,
+.institution,
+.date,
+.area,
+.studyType,
+.title,
+.awarder {
+  display: inline;
+}
+
+.position,
+.studyType,
+.area,
+.title,
+.language,
+.name {
+  font-weight: 600;
+}
+
+.company::before,
+.institution::before,
+.organization::before,
+.awarder::before {
+  content: "at ";
+}
+
+.company,
+.institution,
+.organization,
+.awarder {
+  color: #606d76;
   font-weight: 400;
 }
 
-.education-container .specialization {
-  text-transform: none;
-  font-style: italic;
+.section header .date {
+  display: block;
+  font-size: 1rem;
+  padding: 0.1em 0;
+  color: #606d76;
+  font-weight: 400;
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.keywords,
+.courses {
+  margin: 0.5em 0;
 }
 
-.main-skill {
-  font-size: 80%;
+.keywords li,
+.courses li {
+  display: inline-block;
+  margin: 2px 2px 2px 0;
+  padding: 4px 5px 5px;
+  font-size: 0.9rem;
+  line-height: 1;
+  color: #3e6d8e;
+  background-color: #dfeaf1;
+  border: 0 solid #dfeaf1;
+  white-space: nowrap;
 }
 
-.skill {
-  margin: .15em;
-  padding: .15em;
-  background: ghostwhite;
-  border-radius: 5px;
+.keywords li:hover,
+.courses li:hover {
+  background: #dfeaf0;
 }
-</style>
-</head>
 
-<body>
-  <main id="resume" class="page">
-    <header class="resume-header clearfix">
-        <div class="profile-header pull-left">
-            <h1>Matteo Vitolo</h1>
-            <h2>Engineering Manager</h2>
-        </div>
-        <div class="profile-pic pull-right">
-        </div>
-    </header>
-    <div class="resume-content">
-      <aside class="left-column">
-        <div class="container about-container">
-            <div class="title">
-                <h3>About</h3>
-                <div class="keyline"></div>
+.highlights {
+  margin: 1em 0 0 0;
+}
+
+.highlights > li > p {
+  margin-bottom: 0.5em;
+}
+
+.item {
+  overflow: hidden;
+}
+
+.gpa {
+  clear: both;
+  padding-bottom: 0.5em;
+}
+
+.fa.social {
+  font-size: 1.1em;
+}
+
+/* Social Media Brand Colors */
+
+.google-plus {
+  color: #dd4b39;
+}
+
+.tumblr {
+  color: #32506d;
+}
+
+.foursquare {
+  color: #0072b1;
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.linkedin {
+  color: #007bb6;
+}
+
+.pinterest {
+  color: #cb2027;
+}
+
+.dribbble {
+  color: #ea4c89;
+}
+
+.instagram {
+  color: #517fa4;
+}
+
+.twitter {
+  color: #00aced;
+}
+
+.soundcloud {
+  color: #ff3a00;
+}
+
+.wordpress {
+  color: #21759b;
+}
+
+.youtube {
+  color: #bb0000;
+}
+
+.github {
+  color: #171515;
+}
+
+.stack-overflow {
+  color: #828386;
+  position: relative;
+}
+
+.flickr {
+  color: #ff0084;
+}
+
+.reddit {
+  color: #ff4500;
+}
+
+.hacker-news {
+  color: #ff6600;
+}
+
+.stack-overflow::after {
+  position: absolute;
+  left: 0;
+  content: "\f16c";
+  color: #f68a1f;
+  overflow: hidden;
+  height: 100%;
+}
+
+.telegram {
+  color: #2291c3;
+}
+
+#languages .item,
+#skills .item,
+#interests .item {
+  width: 15em;
+  padding: 0 0.5em 0.5em 0;
+  border-bottom: none;
+}
+
+#skills .item {
+  width: 16em;
+}
+
+#skills .item .keywords {
+  width: 15em;
+}
+
+/* Skill chart */
+
+.level {
+  margin-bottom: 0.5em;
+}
+
+.level em {
+  padding-left: 0.2em;
+}
+
+.level .bar {
+  border: 1px solid #ddd;
+  display: block;
+  width: 10em;
+  height: 5px;
+  position: relative;
+}
+
+.level .bar::after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  background: black;
+  height: 5px;
+}
+
+.level.beginner .bar::after {
+  background: #eb5f51;
+  width: 2.5em;
+}
+
+.level.intermediate .bar::after {
+  background: #ffdf1f;
+  width: 5em;
+}
+
+.level.advanced .bar::after,
+.level.fluent .bar::after {
+  background: #5cb85c;
+  width: 7.5em;
+}
+
+.level.master .bar::after,
+.level.native.speaker .bar::after {
+  background: #59c596;
+  width: 10em;
+}
+
+#references .item {
+  padding-left: 0.5em;
+  border-left: 5px solid #ff6d1f;
+}
+
+.section > section > section {
+  margin-bottom: 0.5rem;
+}
+
+/******************
+*	HELPER CLASSES
+******************/
+
+.clear::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.display {
+  display: block;
+  opacity: 1 !important;
+}
+
+/****************
+*		TABLET
+****************/
+
+@media screen and (min-width: 602px) {
+  #resume {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .section header .date {
+    float: right;
+    font-weight: 600;
+    color: #000;
+  }
+}
+
+/****************
+*		LAPTOP
+****************/
+
+@media screen and (min-width: 1025px) {
+  li {
+    margin-left: 1.5em;
+  }
+  #resume {
+    width: 820px;
+    margin: 2rem auto;
+  }
+  .section > section > header .space-left {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .section > section:not(.main-summary) {
+    margin-left: 1.67rem;
+  }
+  .company::before,
+  .institution::before,
+  .organization::before,
+  .awarder::before {
+    content: "| ";
+  }
+  .header-left {
+    float: left;
+    width: 70%;
+    word-break: normal;
+  }
+  .section header .date {
+    padding: 0.2em;
+  }
+  .display {
+    display: none;
+  }
+  .display:not(.none) {
+    display: block;
+  }
+}
+
+@media print {
+  a:not(.hide-href-print)::after{
+    content: " (" attr(href) ") ";
+  }
+  #resume {
+    margin: 0.1em;
+    padding: 0.1em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    line-height: 1.25;
+  }
+  @page {
+    margin: 1cm 1.4cm;
+  }
+  .item-count {
+    display: none;
+  }
+  .company::before,
+  .institution::before,
+  .organization::before,
+  .awarder::before {
+    content: "at ";
+  }
+  .main-summary {
+    padding: 0;
+    background: transparent;
+  }
+  .section {
+    margin: 0.8rem 0;
+    padding: 0;
+  }
+  .section header {
+    padding-bottom: 0.15rem;
+  }
+  .section .location {
+    padding-bottom: 0.15rem;
+  }
+  .section > section > section {
+    margin: 0 0 1em 0;
+  }
+  .section > section > section:last-of-type {
+    margin: 0;
+  }
+  .stack-overflow::after {
+    content: "";
+  }
+  .fa.social {
+    color: #828386;
+  }
+  ul {
+    margin-top: 0.4em;
+  }
+  ul,
+  li {
+    padding: 0;
+  }
+  ul.keywords li,
+  ul.courses li {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    background: transparent;
+  }
+  ul.keywords li::after,
+  ul.courses li::after {
+    padding: 0 0 0 0.1rem;
+    content: " |";
+  }
+  ul.keywords::before,
+  ul.courses::before {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  #skills .item {
+    width: calc(100% / 3);
+    padding: 0;
+  }
+  .highlights {
+    margin: 0.5em 0 0 0;
+  }
+  ul.keywords::before {
+    content: "Skills acquired: ";
+  }
+  #skills .keywords::before {
+    content: none;
+  }
+  .section p {
+    margin: 0;
+    padding: 0;
+  }
+  ul.courses::before {
+    content: "Major courses: ";
+  }
+  ul.keywords li:last-of-type::after,
+  ul.courses li:last-of-type::after {
+    content: "";
+  }
+  .level em {
+    font-style: normal;
+    padding: 0.1em 0;
+  }
+  .level .bar {
+    display: none;
+  }
+  #profiles .item {
+    padding: 0;
+  }
+  .item.display {
+    display: block;
+    opacity: 1 !important;
+  }
+  .fa-map-marker-alt:before {
+    padding-left: 0.1em;
+  }
+}
+
+  </style>
+  
+  </head>
+  <body>
+  
+  <div id="resume">
+    	<header id="header" class="clear">
+    		<div>
+    			<h1 class="name">Matteo Vitolo</h1>
+    			<h2 class="label">Engineering Manager</h2>
+    		</div>
+    
+    		<span class="location">
+    			<span class="address">Via Taegio 10,</span>
+    			<span class="postalCode">27100,</span>
+    			<span class="city">Pavia,</span>
+    			<span class="region">PV</span>
+    			<span class="countryCode">IT</span>
+    		</span>
+    
+    
+    		<div id="contact">
+    			<div class="email">
+    				<span class="far fa-envelope"></span>
+    				<a class="hide-href-print" href="mailto:matteo.vitolo@gmail.com">matteo.vitolo@gmail.com</a>
+    			</div>
+    			<div class="phone">
+    				<span class="fas fa-mobile-alt"></span>
+    				<a class="hide-href-print" href="tel:+39 348 5631 136">+39 348 5631 136</a>
+    			</div>
+    		</div>
+    
+    		<div id="profiles">
+    			<div class="item">
+    				<div class="username">
+    					<span class="fab fa-github github social"></span>
+    					<span class="url">
+    						<a target="_blank" href=" https://github.com/mvitolo">mvitolo</a>
+    					</span>
+    				</div>
+    			</div>
+    		</div>
+    	</header>
+    
+    	<section class="section">
+    		<section class="main-summary">
+    			<div><p>Engineer Manager and Developer with more than 10 years of experience in the Telecommunications, Fintech and Cloud Services industries. A huge passion for IT and all the techie stuff, enthusiastically a player of this innovation era. Going agile, I can now effectively organise teams’ projects schedule and activities. A Purposeful and positive team player, I like to bring fun to work while building a strong team spirit.</p></div>
+    		</section>
+    	</section>
+    
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Work Experience <span class="item-count">(6)</span></h2>
+      </header>
+    
+      <section id="work">
+        <section class="work-item">
+    
+          <label for="work-item-0"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Oct 2022</span>
+              <span class="endDate">- Current</span>
             </div>
-                <div class="info-tag-container">
-                    <i class="fa fa-map-marker"></i>
-                
-                        <h6 class="info-text">Via Taegio 10 Pavia PV 27100 IT</h6>
-                </div>
-        
-        
-                <div class="info-tag-container">
-                    <i class="fa fa-envelope-o"></i>
-                
-                        <h6 class="info-text">
-                            <a href="mailto:matteo.vitolo@gmail.com" target="_blank">
-                                matteo.vitolo@gmail.com
-                            </a>
-                        </h6>
-                </div>
-        
-                <div class="info-tag-container">
-                    <i class="fa fa-mobile"></i>
-                
-                        <h6 class="info-text">
-                            <a href="http://matteovitolo.com" target="_blank">
-                                +39 348 5631 136
-                            </a>
-                        </h6>
-                </div>
-        
-        
-                                 <div class="info-tag-container">
-                                     <i class="fa fa-github"></i>
-                                 
-                                         <h6 class="info-text">
-                                             <a href=" https://github.com/mvitolo" target="_blank">
-                                                 mvitolo
-                                             </a>
-                                         </h6>
-                                 </div>
+            <div class="position">Engineering Lead</div>
+            <div class="company">Moneyfarm</div>
+          </header>
+    
+           <div class="item" id="work-item">
+            <div class="summary"><p>Moneyfarm is an independent FinTech company.</p></div>
+            <ul class="highlights">
+              <li><p>The main duty for this role is to lead a cross platform team developing Financial Products and oversee the smooth and efficient running of port equipment, and has oversight over each phase of maintenance. I have been working on the agile processes trying to increase confidence in the forecasted dates and quality while working on the architectural side looking for delivery high standard quality key initiatives.</p></li>
+            </ul>
+          </div>
         </section>
-            <div class="container languages-container">
-                <div class="title">
-                    <h3>Languages</h3>
-                    <div class="keyline"></div>
-                </div>
-                <ul class="minimal">
-                        <li>
-                            <h6>English <em>(C1)</em></h6>
-                        </li>
-                        <li>
-                            <h6>Italian <em>(Native)</em></h6>
-                        </li>
-                </ul>
+        <section class="work-item">
+    
+          <label for="work-item-1"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Jan 2022</span>
+              <span class="endDate">- Oct 2022</span>
             </div>
-      </aside>
-      <div class="right-column">
-                <div class="container summary-container">
-                    <div class="title">
-                        <h3>Summary</h3>
-                        <div class="keyline"></div>
-                    </div>            <p class="summary">
-                        Engineer Manager and Developer with more than 10 years of experience in the Telecommunications, Fintech and Cloud Services industries. A huge passion for IT and all the techie stuff, enthusiastically a player of this innovation era. Going agile, I can now effectively organise teams’ projects schedule and activities. A Purposeful and positive team player, I like to bring fun to work while building a strong team spirit.
-                    </p>
-                </div>
-        <div class="container work-container">
-            <div class="title">
-                <h3>Experience</h3>
-                <div class="keyline"></div>
+            <div class="position">Agile Delivery Manager</div>
+            <div class="company">Moneyfarm</div>
+          </header>
+    
+           <div class="item" id="work-item">
+            <div class="summary"><p>Moneyfarm is an independent FinTech company.</p></div>
+            <ul class="highlights">
+              <li><p>Since 2022 I have been working as Delivery Manager managing three teams, all of them customer-facing. We have been working on moving the whole company team to Kanban and working with Team Metrics (WIP, Cycle Time, and Throughput) to stabilise the teams and gain more confidence and predictability. Part of this job was related to augmenting the agile culture of the team and the whole company. I have designed and conducted workshops and lessons to help the teams to perform better and have a more efficient flow.</p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-2"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Jan 2022</span>
+              <span class="endDate">- Oct 2022</span>
             </div>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h5 class="italic pull-right">
-                                <span class="startDate">10/2022</span>
-                                <span class="endDate"> - Present</span>
-                        </h5>
-                    </div>
-        
-                    <h4>Engineering Lead</h4>
-        
-        
-                    <p class="summary">Moneyfarm is an independent FinTech company.</p>
-        
-                    <ul>
-                        <li>The main duty for this role is to lead a cross platform team developing Financial Products and oversee the smooth and efficient running of port equipment, and has oversight over each phase of maintenance. I have been working on the agile processes trying to increase confidence in the forecasted dates and quality while working on the architectural side looking for delivery high standard quality key initiatives.</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h5 class="italic pull-right">
-                                <span class="startDate">01/2022</span>
-                                <span class="endDate"> - 10/2022</span>
-                        </h5>
-                    </div>
-        
-                    <h4>Agile Delivery Manager</h4>
-        
-        
-                    <p class="summary">Moneyfarm is an independent FinTech company.</p>
-        
-                    <ul>
-                        <li>Since 2022 I have been working as Delivery Manager managing three teams, all of them customer-facing. We have been working on moving the whole company team to Kanban and working with Team Metrics (WIP, Cycle Time, and Throughput) to stabilise the teams and gain more confidence and predictability. Part of this job was related to augmenting the agile culture of the team and the whole company. I have designed and conducted workshops and lessons to help the teams to perform better and have a more efficient flow.</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h5 class="italic pull-right">
-                                <span class="startDate">01/2022</span>
-                                <span class="endDate"> - 10/2022</span>
-                        </h5>
-                    </div>
-        
-                    <h4>Senior Mobile Developer and Tech Lead</h4>
-        
-        
-                    <p class="summary">Moneyfarm is an independent FinTech company.</p>
-        
-                    <ul>
-                        <li>Working on the iOS App of the Moneyfarm product to add features and improve the User experience. Part of the job is to improve internal processes to bring incremental value to the user while keeping high standards and quality. I have been working with several teams to improve the workflow with the kanban and agile principles. I am in charge of the release processes for the iOS App.</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h5 class="italic pull-right">
-                                <span class="startDate">01/2018</span>
-                                <span class="endDate"> - 12/2019</span>
-                        </h5>
-                    </div>
-        
-                    <h4>Senior Mobile Developer and Tech Lead</h4>
-        
-        
-                    <p class="summary">Vodafone is one of the world&#x27;s leading telecommunications groups.</p>
-        
-                    <ul>
-                        <li>I’m in charge of the rewriting of both iOS and Android MyVodafone App for the Italian market, bringing the good developing practices inside the team and improving the whole team&#x27;s commitment on the agile methodologies. Doing this I am coordinating a group of mobile developers (remotely and locally).</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h5 class="italic pull-right">
-                                <span class="startDate">02/2007</span>
-                                <span class="endDate"> - 02/2018</span>
-                        </h5>
-                    </div>
-        
-                    <h4>Senior Mobile Developer and Tech Lead</h4>
-        
-        
-                    <p class="summary">Funambol is a leader company in white-label personal cloud solutions.</p>
-        
-                    <ul>
-                        <li>As a Senior Mobile Software Engineer, I was in charge of designing the architecture of the iOS App and choosing the best practices and patterns to apply to the code. Most of the work in my last years in Funambol was organising the team, doing most of the Scrum Master role and duties, and working directly on code and product. I have been an active contributor on the Android App too.</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h5 class="italic pull-right">
-                                <span class="startDate">12/2006</span>
-                                <span class="endDate"> - 08/2005</span>
-                        </h5>
-                    </div>
-        
-                    <h4>Software Engineer</h4>
-        
-        
-                    <p class="summary">B.L.S. is an Internet security consulting company.</p>
-        
-                    <ul>
-                        <li>Working on a service acting as interface to the iptables framework on Linux.</li>
-                    </ul>
-                </section>
-        </div>
-        <div class="container project-container">
-            <div class="title">
-                <h3>Open Source Projects</h3>
-                <div class="keyline"></div>
+            <div class="position">Senior Mobile Developer and Tech Lead</div>
+            <div class="company">Moneyfarm</div>
+          </header>
+    
+           <div class="item" id="work-item">
+            <div class="summary"><p>Moneyfarm is an independent FinTech company.</p></div>
+            <ul class="highlights">
+              <li><p>Working on the iOS App of the Moneyfarm product to add features and improve the User experience. Part of the job is to improve internal processes to bring incremental value to the user while keeping high standards and quality. I have been working with several teams to improve the workflow with the kanban and agile principles. I am in charge of the release processes for the iOS App.</p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-3"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Jan 2018</span>
+              <span class="endDate">- Dec 2019</span>
             </div>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h3 class="bold pull-left">
-                                <a href="https://www.ptactiv.net/" target="_blank">
-                                    PTActiv App
-                                        <span class="sublink">∙ <a href="https://www.ptactiv.net/" target="_blank" class="sublink">https://www.ptactiv.net/</a></span>
-                                </a>
-                        </h3>
-                        <h5 class="italic pull-right">
-                        </h5>
-                    </div>
-        
-        
-                    <div class="flex-container">
-                            <h6 class="skill">Flutter</h6>
-                    </div>
-        
-                    <p class="summary">Since 2015 I am in charge of the iOS app of the PTActiv website. This is a website that aims to handle booking reservations for tennis courts. In 2020 we have migrated the app completely to Flutter and I am in charge of both iOS and Android apps.</p>
-        
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h3 class="bold pull-left">
-                                <a href="https://unoxdue.it/" target="_blank">
-                                    Schedina App
-                                        <span class="sublink">∙ <a href="https://unoxdue.it/" target="_blank" class="sublink">https://unoxdue.it/</a></span>
-                                </a>
-                        </h3>
-                        <h5 class="italic pull-right">
-                        </h5>
-                    </div>
-        
-        
-                    <div class="flex-container">
-                            <h6 class="skill">Flutter</h6>
-                            <h6 class="skill">Firebase</h6>
-                            <h6 class="skill">Cloud Functions</h6>
-                            <h6 class="skill">Serverless</h6>
-                    </div>
-        
-                    <p class="summary">In 2017 I created a little app for betting, without any money, on the Serie A results and competing in a group. I have created the Backend working on the serverless service of Firebase, including push notification, remote DB, Cloud Functions, and Crash reporting.</p>
-        
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h3 class="bold pull-left">
-                                <a href="https://e2scientific.com/" target="_blank">
-                                    TongueOMeter
-                                        <span class="sublink">∙ <a href="https://e2scientific.com/" target="_blank" class="sublink">https://e2scientific.com/</a></span>
-                                </a>
-                        </h3>
-                        <h5 class="italic pull-right">
-                        </h5>
-                    </div>
-        
-        
-                    <div class="flex-container">
-                            <h6 class="skill">Flutter</h6>
-                            <h6 class="skill">Bluetooth</h6>
-                    </div>
-        
-                    <p class="summary">From 2019 I am in charge of both iOS and Android companion app for the Tongueometer devices. Tongueometer is a device that helps reeducate people with Swallowing disorders. The device is available only in the U.S.A.</p>
-        
-                </section>
+            <div class="position">Senior Mobile Developer and Tech Lead</div>
+            <div class="company">Vodafone</div>
+          </header>
+    
+           <div class="item" id="work-item">
+            <div class="summary"><p>Vodafone is one of the world's leading telecommunications groups.</p></div>
+            <ul class="highlights">
+              <li><p>I’m in charge of the rewriting of both iOS and Android MyVodafone App for the Italian market, bringing the good developing practices inside the team and improving the whole team's commitment on the agile methodologies. Doing this I am coordinating a group of mobile developers (remotely and locally).</p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-4"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Feb 2007</span>
+              <span class="endDate">- Feb 2018</span>
+            </div>
+            <div class="position">Senior Mobile Developer and Tech Lead</div>
+            <div class="company">Funambol</div>
+          </header>
+    
+           <div class="item" id="work-item">
+            <div class="summary"><p>Funambol is a leader company in white-label personal cloud solutions.</p></div>
+            <ul class="highlights">
+              <li><p>As a Senior Mobile Software Engineer, I was in charge of designing the architecture of the iOS App and choosing the best practices and patterns to apply to the code. Most of the work in my last years in Funambol was organising the team, doing most of the Scrum Master role and duties, and working directly on code and product. I have been an active contributor on the Android App too.</p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-5"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Dec 2006</span>
+              <span class="endDate">- Aug 2005</span>
+            </div>
+            <div class="position">Software Engineer</div>
+            <div class="company">B.L.S. Consulting</div>
+          </header>
+    
+           <div class="item" id="work-item">
+            <div class="summary"><p>B.L.S. is an Internet security consulting company.</p></div>
+            <ul class="highlights">
+              <li><p>Working on a service acting as interface to the iptables framework on Linux.</p></li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Projects <span class="item-count">(3)</span></h2>
+      </header>
+      <section id="projects">
+        <section class="project-item">
+            <label for="project-item-0"></label>
+    
+          <header class="clear">
+            <div class="position">PTActiv App</div>
+          </header>
+          <span class="website">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.ptactiv.net/">https://www.ptactiv.net/</a>
+          </span>
+          <ul class="keywords">
+              <li>Flutter</li>
+          </ul>
+          <div class="item">
+              <div class="summary"><p>Since 2015 I am in charge of the iOS app of the PTActiv website. This is a website that aims to handle booking reservations for tennis courts. In 2020 we have migrated the app completely to Flutter and I am in charge of both iOS and Android apps.</p></div>
+          </div>
+        </section>
+        <section class="project-item">
+            <label for="project-item-1"></label>
+    
+          <header class="clear">
+            <div class="position">Schedina App</div>
+          </header>
+          <span class="website">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://unoxdue.it/">https://unoxdue.it/</a>
+          </span>
+          <ul class="keywords">
+              <li>Flutter</li>
+              <li>Firebase</li>
+              <li>Cloud Functions</li>
+              <li>Serverless</li>
+          </ul>
+          <div class="item">
+              <div class="summary"><p>In 2017 I created a little app for betting, without any money, on the Serie A results and competing in a group. I have created the Backend working on the serverless service of Firebase, including push notification, remote DB, Cloud Functions, and Crash reporting.</p></div>
+          </div>
+        </section>
+        <section class="project-item">
+            <label for="project-item-2"></label>
+    
+          <header class="clear">
+            <div class="position">TongueOMeter</div>
+          </header>
+          <span class="website">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://e2scientific.com/">https://e2scientific.com/</a>
+          </span>
+          <ul class="keywords">
+              <li>Flutter</li>
+              <li>Bluetooth</li>
+          </ul>
+          <div class="item">
+              <div class="summary"><p>From 2019 I am in charge of both iOS and Android companion app for the Tongueometer devices. Tongueometer is a device that helps reeducate people with Swallowing disorders. The device is available only in the U.S.A.</p></div>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Education <span class="item-count">(2)</span></h2>
+      </header>
+    
+      <section id="education">
+        <section class="education-item">
+          <header class="clear">
+            <div class="header-left">
+              <div class="studyType">
+                Master’s Degree in Computer Engineering
+              </div>
+              <div class="institution">
+                University of Pavia
+              </div>
+            </div>
+            <div class="date">
+              <span class="endDate">
+              - 2005
+              </span>
+            </div>
+          </header>
+    
+    
+    
+          <div class="item">
+          </div>
+        </section>
+        <section class="education-item">
+          <header class="clear">
+            <div class="header-left">
+              <div class="studyType">
+                Bachelor’s Degree in Computer Engineering
+              </div>
+              <div class="institution">
+                University of Pavia
+              </div>
+            </div>
+            <div class="date">
+              <span class="endDate">
+              - 2003
+              </span>
+            </div>
+          </header>
+    
+    
+    
+          <div class="item">
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Certificates</h2>
+      </header>
+      <section id="certificates">
+        <section class="certificate-item">
+          <header class="clear">
+            <div class="header-left">
+              <div class="name">
+                KMPII (KSI) (Kanban System Improvement)
+              </div>
+              <div class="issuer">
+                Kanban University
+              </div>
+            </div>
+            <div class="date">
+              2022
+            </div>
+          </header>
+    
+          <div class="item">
+            <span class="url">
+              <span class="fas fa-external-link-alt"></span>
+              <a target="_blank" href="https://kanban.university/">https://kanban.university/</a>
+            </span>
+          </div>
+        </section>
+        <section class="certificate-item">
+          <header class="clear">
+            <div class="header-left">
+              <div class="name">
+                KMPI (KSD) (Kanban System Design)
+              </div>
+              <div class="issuer">
+                Kanban University
+              </div>
+            </div>
+            <div class="date">
+              2020
+            </div>
+          </header>
+    
+          <div class="item">
+            <span class="url">
+              <span class="fas fa-external-link-alt"></span>
+              <a target="_blank" href="https://kanban.university/">https://kanban.university/</a>
+            </span>
+          </div>
+        </section>
+        <section class="certificate-item">
+          <header class="clear">
+            <div class="header-left">
+              <div class="name">
+                Scrum Master Certification
+              </div>
+              <div class="issuer">
+                ScrumAlliance
+              </div>
+            </div>
+            <div class="date">
+              2017
+            </div>
+          </header>
+    
+          <div class="item">
+            <span class="url">
+              <span class="fas fa-external-link-alt"></span>
+              <a target="_blank" href="https://www.scrumalliance.org/">https://www.scrumalliance.org/</a>
+            </span>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Languages</h2>
+      </header>
+      <section id="languages">
+        <div class="display">
+          <h3 class="language">
+            English
+          </h3>
+          <div class="item">
+            <div class="level fluency c1">
+              <em>C1</em>
+              <div class="bar"></div>
+            </div>
+          </div>
         </div>
-        <div class="container education-container">
-            <div class="title">
-            <h3>Education</h3>
-            <div class="keyline"></div>
-        </div> 
-            <section class="item">
-                <div class="section-header clearfix">
-            <h3 class="bold pull-left">
-                    University of Pavia
-            </h3>
-            <h5 class="italic pull-right">
-            </h5>
+        <div class="display">
+          <h3 class="language">
+            Italian
+          </h3>
+          <div class="item">
+            <div class="level fluency native">
+              <em>Native</em>
+              <div class="bar"></div>
+            </div>
+          </div>
         </div>
-         
-                <h4>Master’s Degree in Computer Engineering </h4>
-        
-              </section>
-        
-            <section class="item">
-                <div class="section-header clearfix">
-            <h3 class="bold pull-left">
-                    University of Pavia
-            </h3>
-            <h5 class="italic pull-right">
-            </h5>
-        </div>
-         
-                <h4>Bachelor’s Degree in Computer Engineering </h4>
-        
-              </section>
-        </div>
-      </div>
-    </div>
-  </main>
-</body>
+      </section>
+    </section>
 
+  </body>
 </html>
