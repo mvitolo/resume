@@ -6,7 +6,7 @@
     "email": "matteo.vitolo@gmail.com",
     "phone": "+39 348 5631 136",
     "url": "http://matteovitolo.com",
-    "summary": "Engineer Manager and Developer with more than 10 years of experience in the Telecommunications, Fintech and Cloud Services industries. A huge passion for IT and all the techie stuff, enthusiastically a player of this innovation era. Going agile, I can now effectively organise teams’ projects schedule and activities. A Purposeful and positive team player, I like to bring fun to work while building a strong team spirit.",
+    "summary": "Results-oriented Engineering Manager with multiple years of experience in managing and overseeing engineering projects across [industry/sector]. Strong technical background combined with excellent leadership and communication skills. Proven ability to effectively coordinate cross-functional teams and develop solutions to complex engineering challenges. Adept at developing and implementing strategies to optimize productivity, quality, and efficiency.",
     "location": {
       "address": "Via Taegio 10",
       "postalCode": "27100",
@@ -25,34 +25,17 @@
   "work": [
     {
       "name": "Moneyfarm",
-      "position": "Engineering Lead",
+      "position": "Engineering Manager",
       "url": "https://moneyfarm.com",
-      "startDate": "2022-10-01",
+      "startDate": "2020-01",
       "summary": "Moneyfarm is an independent FinTech company.",
       "highlights": [
-        "The main duty for this role is to lead a cross platform team developing Financial Products and oversee the smooth and efficient running of port equipment, and has oversight over each phase of maintenance. I have been working on the agile processes trying to increase confidence in the forecasted dates and quality while working on the architectural side looking for delivery high standard quality key initiatives."
-      ]
-    },
-    {
-      "name": "Moneyfarm",
-      "position": "Agile Delivery Manager",
-      "url": "https://moneyfarm.com",
-      "startDate": "2022-01",
-      "endDate": "2022-10",
-      "summary": "Moneyfarm is an independent FinTech company.",
-      "highlights": [
-        "Since 2022 I have been working as Delivery Manager managing three teams, all of them customer-facing. We have been working on moving the whole company team to Kanban and working with Team Metrics (WIP, Cycle Time, and Throughput) to stabilise the teams and gain more confidence and predictability. Part of this job was related to augmenting the agile culture of the team and the whole company. I have designed and conducted workshops and lessons to help the teams to perform better and have a more efficient flow."
-      ]
-    },
-    {
-      "name": "Moneyfarm",
-      "position": "Tech Lead",
-      "url": "https://moneyfarm.com",
-      "startDate": "2022-01",
-      "endDate": "2022-10",
-      "summary": "Moneyfarm is an independent FinTech company.",
-      "highlights": [
-        "Working on the iOS App of the Moneyfarm product to add features and improve the User experience in the Mobile Team. Part of the job is to improve internal processes to bring incremental value to the user while keeping high standards and quality. I have been working with several teams to improve the workflow with the kanban and agile principles. I am in charge of the release processes for the iOS App."
+        "Led a team of seven engineers, a product owner and a designer, overseeing all aspects of project planning, execution, and delivery.",
+        "Released on time two of the biggest key initiative in the company, Thematics and Insurance, creating AUM of multiple million",
+        "Developed and implemented agile processes and standards to improve efficiency and quality with scrum and kanban methodologies.",
+        "Collaborated with cross-functional teams, including design, production, and quality assurance, to ensure seamless project execution.",
+        "Improved team morale and productivity through effective communication and collaboration.",
+        "Coaching and mentoring team members to help them grow as engineers."
       ]
     },
     {
@@ -63,7 +46,11 @@
       "endDate": "2019-12",
       "summary": "Vodafone is one of the world's leading telecommunications groups.",
       "highlights": [
-        "I’m in charge of the rewriting of both iOS and Android MyVodafone App for the Italian market, bringing the good developing practices inside the team and improving the whole team's commitment on the agile methodologies. Doing this I am coordinating a group of mobile developers (remotely and locally)."
+        "Led a team of eight engineers overseeing all aspects of project planning, execution, and delivery.",
+        "Release to more than 5 million customers the new Vodafone App with a new UI/UX.",
+        "Coordinated with external vendors and suppliers to ensure timely delivery of materials and equipment, optimizing project timelines and reducing costs.",
+        "Conducted regular team meetings to foster collaboration, share best practices, and identify areas for improvement.",
+        "Acted as a technical expert, providing guidance and support to team members on complex engineering issues."
       ]
     },
     {
@@ -74,15 +61,18 @@
       "endDate": "2018-02",
       "summary": "Funambol is a leader company in white-label personal cloud solutions.",
       "highlights": [
-        "As a Senior Mobile Software Engineer, I was in charge of designing the architecture of the iOS App and choosing the best practices and patterns to apply to the code. Most of the work in my last years in Funambol was organising the team, doing most of the Scrum Master role and duties, and working directly on code and product. I have been an active contributor on the Android App too."
+        "Led the design and architecture of the iOS App, ensuring the selection of optimal coding practices and patterns.",
+        "Assumed a pivotal role in team organization, effectively taking on Scrum Master responsibilities to streamline project management.",
+        "Directly involved in code development and product enhancement, maintaining hands-on involvement in project execution.",
+        "Actively contributed to the Android App, demonstrating versatility and a commitment to cross-platform expertise."
       ]
     },
     {
       "name": "B.L.S. Consulting",
       "position": "Software Engineer",
       "url": "https://www.bls.it/",
-      "startDate": "2006-12",
-      "endDate": "2005-08",
+      "startDate": "2005-08",
+      "endDate": "2006-12",
       "summary": "B.L.S. is an Internet security consulting company.",
       "highlights": [
         "Working on a service acting as interface to the iptables framework on Linux."
@@ -94,7 +84,7 @@
       "institution": "University of Pavia",
       "url": "https://web.unipv.it/",
       "studyType": "Master’s Degree in Computer Engineering",
-      "endDate": "2005"
+      "endDate": "2006"
     },
     {
       "institution": "University of Pavia",
@@ -106,19 +96,19 @@
   "certificates": [
     {
       "name": "KMPII (KSI) (Kanban System Improvement)",
-      "date": "2022",
+      "date": "2022-01",
       "issuer": "Kanban University",
       "url": "https://kanban.university/"
     },
     {
       "name": "KMPI (KSD) (Kanban System Design)",
-      "date": "2020",
+      "date": "2020-01",
       "issuer": "Kanban University",
       "url": "https://kanban.university/"
     },
     {
       "name": "Scrum Master Certification",
-      "date": "2017",
+      "date": "2017-01",
       "issuer": "ScrumAlliance",
       "url": "https://www.scrumalliance.org/"
     }
