@@ -6,9 +6,9 @@
     "email": "matteo.vitolo@gmail.com",
     "phone": "+39 348 5631 136",
     "url": "http://matteovitolo.com",
-    "summary": "Results-oriented Engineering Manager with multiple years of experience in managing and overseeing engineering projects across [industry/sector]. Strong technical background combined with excellent leadership and communication skills. Proven ability to effectively coordinate cross-functional teams and develop solutions to complex engineering challenges. Adept at developing and implementing strategies to optimize productivity, quality, and efficiency.",
+    "summary": "Results-oriented and dynamic Engineering Manager with years of experience in the management of engineering teams and complex projects in different industries. Excellent technical background, coupled with very strong leadership, strategic planning, and communication skills. Proven track record of delivering quality products on time while ensuring high team productivity and rolling out Agile methodologies for increased operational efficiency.",
     "location": {
-      "address": "Via Taegio 10",
+      "address": "Viale Lungo Ticino Visconti 1",
       "postalCode": "27100",
       "city": "Pavia",
       "countryCode": "IT",
@@ -113,6 +113,20 @@
       "url": "https://www.scrumalliance.org/"
     }
   ],
+  "skills": [
+    {
+    "name": "Technical",
+    "level": "Master",
+    "keywords": [
+      "Event Storming", "Event Driven Architecture", "Flutter", "Firebase", "Cloud Functions", "Serverless Architecture", "iOS", "Android", "Linux", "Agile Methodologies", "Scrum", "Kanban"
+    ]},
+    {
+      "name": "Leadership",
+      "level": "Master",
+      "keywords": [
+        "Team Leadership", "Project Management", "Communication", "Leadership", "Team Building", "Change Management", "Strategic Planning", "Product Management", "Business Development", "Innovation", "Agile Methodologies", "Scrum", "Kanban", "Professional Coaching"
+      ]}
+  ],
   "languages": [
     {
       "language": "English",
@@ -121,39 +135,6 @@
     {
       "language": "Italian",
       "fluency": "Native"
-    }
-  ],
-  "projects": [
-    {
-      "name": "PTActiv App",
-      "summary": "Since 2015 I am in charge of the iOS app of the PTActiv website. This is a website that aims to handle booking reservations for tennis courts. In 2020 we have migrated the app completely to Flutter and I am in charge of both iOS and Android apps.",
-      "keywords": [
-        "Flutter"
-      ],
-      "url": "https://www.ptactiv.net/",
-      "type": "application"
-    },
-    {
-      "name": "Schedina App",
-      "summary": "In 2017 I created a little app for betting, without any money, on the Serie A results and competing in a group. I have created the Backend working on the serverless service of Firebase, including push notification, remote DB, Cloud Functions, and Crash reporting.",
-      "keywords": [
-        "Flutter",
-        "Firebase",
-        "Cloud Functions",
-        "Serverless"
-      ],
-      "url": "https://unoxdue.it/",
-      "type": "application"
-    },
-    {
-      "name": "TongueOMeter",
-      "summary": "From 2019 I am in charge of both iOS and Android companion app for the Tongueometer devices. Tongueometer is a device that helps reeducate people with Swallowing disorders. The device is available only in the U.S.A.",
-      "keywords": [
-        "Flutter",
-        "Bluetooth"
-      ],
-      "url": "https://e2scientific.com/",
-      "type": "application"
     }
   ]
 }
