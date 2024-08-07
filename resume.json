@@ -118,13 +118,19 @@
     "name": "Technical",
     "level": "Master",
     "keywords": [
-      "Event Storming", "Event Driven Architecture", "Flutter", "Firebase", "Cloud Functions", "Serverless Architecture", "iOS", "Android", "Linux", "Agile Methodologies", "Scrum", "Kanban"
+      "Mobile Apps", "Hybrid Apps", "Serverless Architecture", "iOS", "Android", "Linux"
     ]},
+    {
+      "name": "Processes",
+      "level": "Master",
+      "keywords": [
+        "Event Storming", "Agile Methodologies", "Scrum", "Kanban"
+      ]},
     {
       "name": "Leadership",
       "level": "Master",
       "keywords": [
-        "Team Leadership", "Project Management", "Communication", "Leadership", "Team Building", "Change Management", "Strategic Planning", "Product Management", "Business Development", "Innovation", "Agile Methodologies", "Scrum", "Kanban", "Professional Coaching"
+        "Team Leadership", "Project Management","Change Management", "Strategic Planning", "Professional Coaching"
       ]}
   ],
   "languages": [
