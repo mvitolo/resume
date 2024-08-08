@@ -115,22 +115,22 @@
   ],
   "skills": [
     {
-    "name": "Technical",
-    "level": "Master",
-    "keywords": [
-      "Mobile Apps", "Hybrid Apps", "Serverless Architecture", "iOS", "Android", "Linux"
-    ]},
+      "name": "Leadership",
+      "level": "",
+      "keywords": [
+        "Team Leadership", "Project Management","Change Management", "Strategic Planning", "Professional Coaching"
+      ]},
     {
       "name": "Processes",
-      "level": "Master",
+      "level": "",
       "keywords": [
         "Event Storming", "Agile Methodologies", "Scrum", "Kanban"
       ]},
     {
-      "name": "Leadership",
-      "level": "Master",
+      "name": "Technical",
+      "level": "",
       "keywords": [
-        "Team Leadership", "Project Management","Change Management", "Strategic Planning", "Professional Coaching"
+        "Mobile Apps", "Hybrid Apps", "Serverless Architecture", "iOS", "Android", "Linux"
       ]}
   ],
   "languages": [
