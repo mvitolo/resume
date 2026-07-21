@@ -6,7 +6,7 @@
     "email": "matteo.vitolo@gmail.com",
     "phone": "+39 348 5631 136",
     "url": "http://matteovitolo.com",
-    "summary": "Results-oriented and dynamic Engineering Manager with years of experience in the management of engineering teams and complex projects in different industries. Excellent technical background, coupled with very strong leadership, strategic planning, and communication skills. Proven track record of delivering quality products on time while ensuring high team productivity and rolling out Agile methodologies for increased operational efficiency.",
+    "summary": "Results-oriented and dynamic Engineering Manager with years of experience in the management of engineering teams and complex projects in different industries. Excellent technical background, coupled with very strong leadership, strategic planning, and communication skills. Proven track record of delivering quality products on time while ensuring high team productivity and rolling out Agile methodologies for increased operational efficiency. A passionate early adopter of AI in engineering, driving its adoption across the software development lifecycle to raise delivery pace and team performance.",
     "location": {
       "address": "Viale Lungo Ticino Visconti 1",
       "postalCode": "27100",
@@ -31,6 +31,7 @@
       "summary": "Moneyfarm is an independent FinTech company.",
       "highlights": [
         "Led a team of seven engineers, a product owner and a designer, overseeing all aspects of project planning, execution, and delivery.",
+        "Reviewed and refactored the entire product development lifecycle leveraging AI, driving a ~3x increase in delivery pace and lifting PR throughput from the 75th to consistently above the 90th percentile against industry benchmarks (from early 2026).",
         "Released on time two of the biggest key initiatives in the company, Thematics and Insurance, creating AUM of multiple million",
         "Developed and implemented agile processes and standards to improve efficiency and quality with scrum and kanban methodologies.",
         "Collaborated with cross-functional teams, including design, production, and quality assurance, to ensure seamless project execution.",
@@ -77,6 +78,29 @@
       "highlights": [
         "Working on a service acting as interface to the iptables framework on Linux."
       ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "TongueOMeter",
+      "url": "https://e2scientific.com/",
+      "startDate": "2019",
+      "description": "In charge of both the iOS and Android companion apps for the Tongueometer devices. Tongueometer is a device that helps re-educate people with swallowing disorders. The device is available only in the U.S.A.",
+      "keywords": ["Flutter", "Bluetooth", "iOS", "Android"]
+    },
+    {
+      "name": "PTActiv App",
+      "url": "https://www.ptactiv.net/",
+      "startDate": "2015",
+      "description": "In charge of the iOS app of the PTActiv website, a service that handles booking reservations for tennis courts. In 2020 the app was migrated completely to Flutter; responsible for both iOS and Android apps.",
+      "keywords": ["Flutter", "iOS", "Android"]
+    },
+    {
+      "name": "Schedina App",
+      "url": "https://unoxdue.it/",
+      "startDate": "2017",
+      "description": "Created a small app for betting (no real money) on Serie A results within a group. Built the backend on Firebase serverless: push notifications, remote DB, Cloud Functions, and crash reporting.",
+      "keywords": ["Flutter", "Firebase", "Cloud Functions", "Serverless"]
     }
   ],
   "education": [
@@ -130,7 +154,7 @@
       "name": "Technical",
       "level": "",
       "keywords": [
-        "Mobile Apps", "Hybrid Apps", "Serverless Architecture", "iOS", "Android", "Linux"
+        "Mobile Apps", "Hybrid Apps", "Flutter", "Bluetooth", "Firebase", "Serverless Architecture", "iOS", "Android", "Linux"
       ]}
   ],
   "languages": [
