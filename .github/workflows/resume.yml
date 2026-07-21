@@ -18,13 +18,13 @@ jobs:
     needs: check_run
     steps:
       - uses: actions/checkout@v2
-      - uses: kelvintaywl/action-jsonresume-export@v1
-        name: Export resume as HTML
+      - uses: actions/setup-node@v4
         with:
-          theme: macchiato
-          resume_filepath: resume.json
-          # modifies the index.html in-place
-          output_filepath: docs/index.html
+          node-version: 20
+      - name: Export resume as HTML
+        run: |
+          npm ci
+          npm run build
       - name: Commit published HTML
         id: commit
         run: |
