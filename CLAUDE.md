@@ -14,7 +14,7 @@ Personal résumé for Matteo Vitolo. Single source of truth: `resume.json` (JSON
 ## Commands
 
 - `npm install` — install deps
-- `npx resumed export -f html -t jsonresume-theme-macchiato -o docs/index.html resume.json` — build
+- `npm run build` — render resume.json → docs/index.html (via build.mjs, calls theme.render directly)
 
 ## Rules
 
