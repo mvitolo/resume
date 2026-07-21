@@ -1,4 +1,4 @@
-import * as theme from 'jsonresume-theme-claude'
+import * as theme from 'jsonresume-theme-creative-confidence'
 import { readFileSync, writeFileSync } from 'fs'
 
 const render = theme.render ?? theme.default?.render
