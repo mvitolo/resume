@@ -87,7 +87,6 @@
       "startDate": "2019",
       "description": "Built with Flutter the iOS and Android companion apps for the Tongueometer devices, a healthcare product that helps re-educate people with swallowing disorders.",
       "highlights": [
-        "Developed the cross-platform apps in Flutter for both iOS and Android.",
         "Implemented the Bluetooth integration between the apps and the Tongueometer hardware devices.",
         "As a medical/healthcare product distributed in the U.S.A., the app had to meet and pass FDA approval."
       ],
@@ -99,7 +98,6 @@
       "startDate": "2015",
       "description": "Built with Flutter the iOS and Android apps for the PTActiv service, which handles booking reservations for tennis courts.",
       "highlights": [
-        "In charge of the iOS app since 2015; migrated the app completely to Flutter in 2020, then responsible for both iOS and Android."
       ],
       "keywords": ["Flutter", "iOS", "Android"]
     },
@@ -109,8 +107,6 @@
       "startDate": "2017",
       "description": "Built with Flutter a small app for betting (no real money) on Serie A results within a group.",
       "highlights": [
-        "Developed the app in Flutter.",
-        "Built the backend on Firebase serverless: push notifications, remote DB, Cloud Functions, and crash reporting."
       ],
       "keywords": ["Flutter", "Firebase", "Cloud Functions", "Serverless"]
     }
