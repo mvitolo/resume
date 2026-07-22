@@ -10,7 +10,7 @@ Personal résumé for Matteo Vitolo. Single source of truth: `resume.json` (JSON
 - `docs/index.html` — generated HTML, do NOT edit
 - `.github/workflows/resume.yml` — CI: runs `npm run build` to render resume.json → HTML
 - `build.mjs` — render script (theme.render, no puppeteer)
-- `package.json` — single dep: `jsonresume-theme-developer-mono`
+- `package.json` — single dep: `jsonresume-theme-stackoverflow`
 
 ## Commands
 

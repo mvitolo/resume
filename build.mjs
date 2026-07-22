@@ -1,5 +1,4 @@
-// import from /dist: the package's "." export condition points at raw .jsx
-import * as theme from 'jsonresume-theme-developer-mono/dist'
+import * as theme from 'jsonresume-theme-stackoverflow'
 import { readFileSync, writeFileSync } from 'fs'
 
 const render = theme.render ?? theme.default?.render
